@@ -1,0 +1,17 @@
+[user]
+  name = Chinmay Garde
+  email = chinmaygarde@gmail.com
+[core]
+  editor = subl -n -w
+  pager = less -S
+  excludesfile = ~/.global_gitignore
+[mergetool "smerge"]
+  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+  trustExitCode = true
+[merge]
+  tool = smerge
+[alias]
+  co = checkout
+  b = branch
+  d = diff
+  l = log --format=\"%Cred%h %Cblue%<|(26,trunc)%ch %Cgreen%<|(45,trunc)%an %Creset%s\"
